@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.springframework.boot'
+version = '3.3.3'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	implementation project(':spring-boot-project:spring-boot-starters:spring-boot-starter-web')
+	implementation project(':spring-framework:spring-core')
+	implementation project(':spring-framework:spring-context')
+	implementation project(':spring-framework:spring-web')
+	implementation project(':spring-framework:spring-webmvc')
+  //  testImplementation platform('org.junit:junit-bom:5.10.0')
+  //  testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

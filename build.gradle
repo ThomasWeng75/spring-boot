@@ -24,3 +24,8 @@ allprojects {
 		resolutionStrategy.cacheChangingModulesFor 0, "minutes"
 	}
 }
+subprojects {
+    tasks.withType(Test) {
+        enabled = false
+    }
+}

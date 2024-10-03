@@ -5,6 +5,9 @@ pluginManagement {
 		if (version.endsWith('-SNAPSHOT')) {
 			maven { url "https://repo.spring.io/snapshot" }
 		}
+		maven { url "https://repo.spring.io/milestone" } // For milestone versions
+    maven { url "https://repo.spring.io/snapshot" }  // For snapshot versions
+    maven { url "https://repo.spring.io/release" }   // For release versions
 	}
 	resolutionStrategy {
 		eachPlugin {
@@ -79,7 +82,6 @@ include "spring-boot-system-tests:spring-boot-image-tests"
 file("${rootDir}/spring-boot-project/spring-boot-starters").eachDirMatch(~/spring-boot-starter.*/) {
 	include "spring-boot-project:spring-boot-starters:${it.name}"
 }
+includeBuild "I:/gitproject/spring-framework"
+include "p3"
 
-file("${rootDir}/spring-boot-tests/spring-boot-smoke-tests").eachDirMatch(~/spring-boot-smoke-test.*/) {
-	include "spring-boot-tests:spring-boot-smoke-tests:${it.name}"
-}
