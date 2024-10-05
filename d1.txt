@@ -1,0 +1,158 @@
+> Task :spring-framework:buildSrc:compileJava UP-TO-DATE
+> Task :spring-framework:buildSrc:compileGroovy NO-SOURCE
+> Task :spring-framework:buildSrc:pluginDescriptors UP-TO-DATE
+> Task :spring-framework:buildSrc:processResources UP-TO-DATE
+> Task :spring-framework:buildSrc:classes UP-TO-DATE
+> Task :spring-framework:buildSrc:jar UP-TO-DATE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :spring-framework:spring-core:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-aop:checkKotlinGradlePluginConfigurationErrors
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :spring-framework:spring-expression:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-beans:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-context:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-expression:processResources NO-SOURCE
+> Task :spring-framework:spring-aop:processResources UP-TO-DATE
+> Task :spring-framework:spring-web:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-core:javapoetRepackJar UP-TO-DATE
+> Task :spring-framework:spring-beans:processResources UP-TO-DATE
+> Task :spring-framework:spring-web:processResources UP-TO-DATE
+> Task :spring-framework:spring-oxm:xjc UP-TO-DATE
+> Task :spring-framework:spring-context:processResources UP-TO-DATE
+> Task :spring-framework:spring-core:objenesisRepackJar UP-TO-DATE
+> Task :spring-framework:spring-instrument:compileJava UP-TO-DATE
+> Task :spring-framework:spring-jcl:compileJava UP-TO-DATE
+> Task :spring-framework:spring-jcl:processResources UP-TO-DATE
+> Task :spring-framework:spring-jcl:classes UP-TO-DATE
+> Task :spring-framework:spring-jcl:jar UP-TO-DATE
+> Task :spring-framework:spring-core:compileKotlin UP-TO-DATE
+> Task :spring-framework:spring-core:compileJava UP-TO-DATE
+> Task :spring-framework:spring-core:processResources UP-TO-DATE
+> Task :spring-framework:spring-core:classes UP-TO-DATE
+> Task :spring-framework:spring-expression:compileKotlin NO-SOURCE
+> Task :spring-framework:spring-core:compileJava21Kotlin NO-SOURCE
+> Task :spring-framework:spring-expression:compileJava UP-TO-DATE
+> Task :spring-framework:spring-expression:classes UP-TO-DATE
+> Task :spring-framework:spring-core:compileJava21Java UP-TO-DATE
+> Task :spring-framework:spring-beans:compileKotlin UP-TO-DATE
+> Task :spring-framework:spring-core:processJava21Resources NO-SOURCE
+> Task :spring-framework:spring-core:java21Classes UP-TO-DATE
+> Task :spring-framework:spring-expression:jar UP-TO-DATE
+> Task :spring-framework:spring-beans:compileJava UP-TO-DATE
+> Task :spring-framework:spring-core:jar UP-TO-DATE
+> Task :spring-framework:spring-beans:classes UP-TO-DATE
+> Task :spring-framework:spring-aop:compileKotlin NO-SOURCE
+> Task :spring-framework:spring-beans:jar UP-TO-DATE
+> Task :spring-framework:spring-oxm:compileJava UP-TO-DATE
+> Task :spring-framework:spring-aop:compileJava UP-TO-DATE
+> Task :spring-framework:spring-aop:classes UP-TO-DATE
+> Task :spring-framework:spring-aop:jar UP-TO-DATE
+> Task :spring-framework:spring-context:compileKotlin UP-TO-DATE
+> Task :spring-framework:spring-context:compileJava UP-TO-DATE
+> Task :spring-framework:spring-context:classes UP-TO-DATE
+> Task :spring-framework:spring-context:jar UP-TO-DATE
+> Task :spring-framework:spring-web:compileKotlin UP-TO-DATE
+> Task :spring-framework:spring-web:compileJava UP-TO-DATE
+> Task :spring-framework:spring-web:classes UP-TO-DATE
+> Task :spring-framework:spring-web:jar UP-TO-DATE
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+
+> Task :p3:dependencies
+
+------------------------------------------------------------
+Project ':p3'
+------------------------------------------------------------
+
+runtimeClasspath - Runtime classpath of source set 'main'.
+\--- project :spring-boot-project:spring-boot-starters:spring-boot-starter-web
+     +--- project :spring-boot-project:spring-boot-starters:spring-boot-starter
+     |    +--- project :spring-boot-project:spring-boot
+     |    |    +--- org.springframework:spring-core -> project :spring-framework:spring-core
+     |    |    |    \--- project :spring-framework:spring-jcl
+     |    |    \--- org.springframework:spring-context -> project :spring-framework:spring-context
+     |    |         +--- project :spring-framework:spring-aop
+     |    |         |    +--- project :spring-framework:spring-beans
+     |    |         |    |    \--- project :spring-framework:spring-core (*)
+     |    |         |    \--- project :spring-framework:spring-core (*)
+     |    |         +--- project :spring-framework:spring-beans (*)
+     |    |         +--- project :spring-framework:spring-core (*)
+     |    |         +--- project :spring-framework:spring-expression
+     |    |         |    \--- project :spring-framework:spring-core (*)
+     |    |         \--- io.micrometer:micrometer-observation:1.10.0 -> 1.14.0-M3
+     |    |              \--- io.micrometer:micrometer-commons:1.14.0-M3
+     |    +--- project :spring-boot-project:spring-boot-autoconfigure
+     |    |    \--- project :spring-boot-project:spring-boot (*)
+     |    +--- project :spring-boot-project:spring-boot-starters:spring-boot-starter-logging
+     |    |    +--- ch.qos.logback:logback-classic -> 1.5.8
+     |    |    |    +--- ch.qos.logback:logback-core:1.5.8
+     |    |    |    \--- org.slf4j:slf4j-api:2.0.15 -> 2.0.16
+     |    |    +--- org.apache.logging.log4j:log4j-to-slf4j -> 2.24.0
+     |    |    |    +--- org.apache.logging.log4j:log4j-api:2.24.0
+     |    |    |    \--- org.slf4j:slf4j-api:2.0.16
+     |    |    \--- org.slf4j:jul-to-slf4j -> 2.0.16
+     |    |         \--- org.slf4j:slf4j-api:2.0.16
+     |    +--- jakarta.annotation:jakarta.annotation-api -> 2.1.1
+     |    +--- org.springframework:spring-core -> project :spring-framework:spring-core (*)
+     |    \--- org.yaml:snakeyaml -> 2.3
+     +--- project :spring-boot-project:spring-boot-starters:spring-boot-starter-json
+     |    +--- project :spring-boot-project:spring-boot-starters:spring-boot-starter (*)
+     |    +--- org.springframework:spring-web -> project :spring-framework:spring-web
+     |    |    +--- project :spring-framework:spring-beans (*)
+     |    |    +--- project :spring-framework:spring-core (*)
+     |    |    \--- io.micrometer:micrometer-observation:1.10.0 -> 1.14.0-M3 (*)
+     |    +--- com.fasterxml.jackson.core:jackson-databind -> 2.18.0
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.18.0
+     |    |    |    \--- com.fasterxml.jackson:jackson-bom:2.18.0
+     |    |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.18.0 (c)
+     |    |    |         +--- com.fasterxml.jackson.core:jackson-core:2.18.0 (c)
+     |    |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.18.0 (c)
+     |    |    |         +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.18.0 (c)
+     |    |    |         +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.0 (c)
+     |    |    |         \--- com.fasterxml.jackson.module:jackson-module-parameter-names:2.18.0 (c)
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.18.0
+     |    |    |    \--- com.fasterxml.jackson:jackson-bom:2.18.0 (*)
+     |    |    \--- com.fasterxml.jackson:jackson-bom:2.18.0 (*)
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8 -> 2.18.0
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.18.0 (*)
+     |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.18.0 (*)
+     |    |    \--- com.fasterxml.jackson:jackson-bom:2.18.0 (*)
+     |    +--- com.fasterxml.jackson.datatype:jackson-datatype-jsr310 -> 2.18.0
+     |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.18.0 (*)
+     |    |    +--- com.fasterxml.jackson.core:jackson-core:2.18.0 (*)
+     |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.18.0 (*)
+     |    |    \--- com.fasterxml.jackson:jackson-bom:2.18.0 (*)
+     |    \--- com.fasterxml.jackson.module:jackson-module-parameter-names -> 2.18.0
+     |         +--- com.fasterxml.jackson.core:jackson-core:2.18.0 (*)
+     |         +--- com.fasterxml.jackson.core:jackson-databind:2.18.0 (*)
+     |         \--- com.fasterxml.jackson:jackson-bom:2.18.0 (*)
+     +--- project :spring-boot-project:spring-boot-starters:spring-boot-starter-tomcat
+     |    +--- jakarta.annotation:jakarta.annotation-api -> 2.1.1
+     |    +--- org.apache.tomcat.embed:tomcat-embed-core -> 10.1.30
+     |    +--- org.apache.tomcat.embed:tomcat-embed-el -> 10.1.30
+     |    \--- org.apache.tomcat.embed:tomcat-embed-websocket -> 10.1.30
+     |         \--- org.apache.tomcat.embed:tomcat-embed-core:10.1.30
+     +--- org.springframework:spring-web -> project :spring-framework:spring-web (*)
+     \--- org.springframework:spring-webmvc -> project :spring-framework:spring-webmvc
+          +--- project :spring-framework:spring-aop (*)
+          +--- project :spring-framework:spring-beans (*)
+          +--- project :spring-framework:spring-context (*)
+          +--- project :spring-framework:spring-core (*)
+          +--- project :spring-framework:spring-expression (*)
+          \--- project :spring-framework:spring-web (*)
+
+(c) - A dependency constraint, not a dependency. The dependency affected by the constraint occurs elsewhere in the tree.
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3s
+45 actionable tasks: 7 executed, 38 up-to-date

@@ -4,46 +4,46 @@
 > Task :spring-framework:buildSrc:processResources UP-TO-DATE
 > Task :spring-framework:buildSrc:classes UP-TO-DATE
 > Task :spring-framework:buildSrc:jar UP-TO-DATE
-> Task :buildSrc:pluginDescriptors UP-TO-DATE
-> Task :spring-framework:spring-expression:checkKotlinGradlePluginConfigurationErrors
-> Task :spring-framework:spring-beans:checkKotlinGradlePluginConfigurationErrors
 > Task :spring-framework:spring-aop:checkKotlinGradlePluginConfigurationErrors
-> Task :spring-framework:spring-expression:processResources NO-SOURCE
-> Task :spring-framework:spring-context:checkKotlinGradlePluginConfigurationErrors
 > Task :spring-framework:spring-aop:processResources UP-TO-DATE
-> Task :spring-framework:spring-beans:processResources UP-TO-DATE
-> Task :spring-framework:spring-web:checkKotlinGradlePluginConfigurationErrors
-> Task :buildSrc:processResources UP-TO-DATE
-> Task :spring-framework:spring-web:processResources UP-TO-DATE
-> Task :spring-framework:spring-context:processResources UP-TO-DATE
-> Task :spring-framework:spring-oxm:xjc UP-TO-DATE
-> Task :spring-framework:spring-instrument:compileJava UP-TO-DATE
-> Task :spring-framework:spring-jcl:compileJava UP-TO-DATE
+> Task :spring-framework:spring-context:checkKotlinGradlePluginConfigurationErrors
 > Task :spring-framework:spring-core:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-instrument:compileJava UP-TO-DATE
+> Task :spring-framework:spring-web:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-oxm:xjc UP-TO-DATE
+> Task :spring-framework:spring-web:processResources UP-TO-DATE
+> Task :spring-framework:spring-beans:checkKotlinGradlePluginConfigurationErrors
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :spring-framework:spring-context:processResources UP-TO-DATE
+> Task :spring-framework:spring-expression:checkKotlinGradlePluginConfigurationErrors
+> Task :spring-framework:spring-beans:processResources UP-TO-DATE
+> Task :spring-framework:spring-jcl:compileJava UP-TO-DATE
+> Task :spring-framework:spring-core:javapoetRepackJar UP-TO-DATE
+> Task :spring-framework:spring-expression:processResources NO-SOURCE
 > Task :spring-framework:spring-jcl:processResources UP-TO-DATE
 > Task :spring-framework:spring-jcl:classes UP-TO-DATE
-> Task :spring-framework:spring-core:javapoetRepackJar UP-TO-DATE
-> Task :spring-framework:spring-jcl:jar UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
 > Task :spring-framework:spring-core:objenesisRepackJar UP-TO-DATE
+> Task :spring-framework:spring-jcl:jar UP-TO-DATE
 > Task :spring-framework:spring-core:compileKotlin UP-TO-DATE
 > Task :spring-framework:spring-core:compileJava UP-TO-DATE
 > Task :spring-framework:spring-core:processResources UP-TO-DATE
-> Task :spring-framework:spring-core:classes UP-TO-DATE
 > Task :spring-framework:spring-expression:compileKotlin NO-SOURCE
+> Task :spring-framework:spring-core:classes UP-TO-DATE
 > Task :spring-framework:spring-core:compileJava21Kotlin NO-SOURCE
 > Task :spring-framework:spring-expression:compileJava UP-TO-DATE
 > Task :spring-framework:spring-expression:classes UP-TO-DATE
-> Task :spring-framework:spring-core:compileJava21Java UP-TO-DATE
 > Task :spring-framework:spring-beans:compileKotlin UP-TO-DATE
+> Task :spring-framework:spring-core:compileJava21Java UP-TO-DATE
 > Task :spring-framework:spring-core:processJava21Resources NO-SOURCE
 > Task :spring-framework:spring-expression:jar UP-TO-DATE
-> Task :spring-framework:spring-core:java21Classes UP-TO-DATE
 > Task :spring-framework:spring-beans:compileJava UP-TO-DATE
+> Task :spring-framework:spring-core:java21Classes UP-TO-DATE
 > Task :spring-framework:spring-beans:classes UP-TO-DATE
-> Task :spring-framework:spring-core:jar UP-TO-DATE
 > Task :spring-framework:spring-aop:compileKotlin NO-SOURCE
 > Task :spring-framework:spring-beans:jar UP-TO-DATE
 > Task :spring-framework:spring-oxm:compileJava UP-TO-DATE
+> Task :spring-framework:spring-core:jar UP-TO-DATE
 > Task :spring-framework:spring-aop:compileJava UP-TO-DATE
 > Task :spring-framework:spring-aop:classes UP-TO-DATE
 > Task :spring-framework:spring-aop:jar UP-TO-DATE
@@ -506,5 +506,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 5s
+BUILD SUCCESSFUL in 4s
 45 actionable tasks: 7 executed, 38 up-to-date
