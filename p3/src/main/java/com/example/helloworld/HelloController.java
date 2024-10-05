@@ -16,5 +16,11 @@ public class HelloController {
 		return "h1";
 
 	}
+	@GetMapping("/h2")
+	public String h2()
+	{
+		return "h2";
+
+	}
 
 }
